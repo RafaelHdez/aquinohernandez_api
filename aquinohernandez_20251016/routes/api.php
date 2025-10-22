@@ -9,4 +9,5 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('/zonas', [zonaController::class, 'obtenerZonas']);
+
 Route::get('/zona/{idzona}', [zonaController::class, 'obtenerZona']);
